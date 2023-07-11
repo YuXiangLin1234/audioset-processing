@@ -30,7 +30,7 @@ def download(args):
     print("Downloading classes from AudioSet.")
 
     with open("audioset_527.txt", "r") as f: 
-        all = f.readlines().split("\n")
+        all = f.read().split("\n")
 
     for class_name in all:
         utils.download(class_name, args)
